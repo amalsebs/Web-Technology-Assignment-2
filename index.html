@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Event Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script type="text/javascript"
+        src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+    <h1>Event Registration Form</h1>
+
+    <form id="basic-form" action="" method="post">
+        <table style="border-collapse: collapse;">
+            <tr>
+                <td class="formheader">First Name</td>
+                <td><input type="text" id="fname" name="fname" class="proper"></td>
+            </tr>
+            <tr>
+                <td class="formheader">Last Name</td>
+                <td><input type="text" id="lname" name="lname" class="proper"></td>
+            </tr>
+            <tr>
+                <td class="formheader">Email</td>
+                <td><input type="email" id="email" name="email" class="proper"></td>
+            </tr>
+            <tr>
+                <td class="formheader">Phone</td>
+                <td><input type="tel" id="phone" name="phone" class="proper"></td>
+            </tr>
+            <tr>
+                <td class="formheader">College</td>
+                <td><input type="text" id="college" name="college" class="proper"></td>
+            </tr>
+            <tr>
+                <td class="formheader">DOB</td>
+                <td><input type="text" id="dob" name="dob" class="proper"></td>
+            </tr>
+            <tr>
+                <td class="formheader">Course</td>
+                <td>
+                    <select id="course" name="course">
+                        <option value="btech">BTech</option>
+                        <option value="mtech">MTech</option>
+                        <option value="bca">BCA</option>
+                        <option value="mca">MCA</option>
+                        <option value="other">other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="formheader">Branch</td>
+                <td>
+                    <select id="branch" name="branch">
+                        <option value="cs">CS</option>
+                        <option value="it">IT</option>
+                        <option value="ec">EC</option>
+                        <option value="other">other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="formheader">User Name</td>
+                <td><input type="text" id="uname" name="uname" class="proper"></td>
+            </tr>
+            <tr>
+                <td class="formheader">Confirm User Name</td>
+                <td><input type="text" id="ucname" name="ucname" class="proper" onkeydown="checkUserName()"></td>
+            </tr>
+            <tr>
+                <td class="formheader">Password</td>
+                <td><input type="password" id="pass" name="pass" class="proper" onkeydown="checkPasswordStrength()">
+                    <span class="error" id="passStrength"></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="formheader">Confirm Password</td>
+                <td><input type="password" id="cpass" name="cpass" class="proper" onkeydown="checkPassword()"></td>
+            </tr>
+        </table>
+
+        <input type="submit" value="SUBMIT">
+        </p>
+    </form>
+
+</body>
+
+</html>
